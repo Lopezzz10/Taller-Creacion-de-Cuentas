@@ -35,4 +35,24 @@ public class Cuenta {
         this.tipo = tipo;
         this.saldo = saldo;
     }
+    
+    public void imprimir() {
+        System.out.println("************************");
+        System.out.println("        CUENTA");
+        System.out.println("************************");
+        System.out.println("Número de Cuenta: " + id);
+        System.out.println("Tipo: " + tipo);
+        System.out.println("Saldo: USD " + saldo);
+        System.out.println("************************");
+    }
+
+    public void imprimirConMiEstilo() {
+        System.out.println("==========================");
+        System.out.println("|      MI CUENTA        |");
+        System.out.println("==========================");
+        System.out.println("| ID:    " + id);
+        System.out.println("| Tipo:  " + tipo);
+        System.out.println("| Saldo: $" + saldo);
+        System.out.println("==========================");
+    }
 }
